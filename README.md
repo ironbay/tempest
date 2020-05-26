@@ -20,6 +20,13 @@ export function Home() {
 }
 ```
 
+## Goals
+
+- Provide typesafety when using Tailwind
+- Improve readability when using many classes
+- Support variants (responsive, hover, etc)
+- Respect tailwind.config.js customizations
+
 ## Usage
 
 ### Install
@@ -64,6 +71,8 @@ npm run tempest
 
 Feel free to poke around the generated file to change anything to your liking
 
-## Upcoming
+## TODO
 
-Right now Tempest provides a very opinionated way on how the props are named and grouped. This should eventually be configurable in case you find our approach too verbose.
+1. Right now Tempest provides a very opinionated way on how the props are named and grouped. This should eventually be configurable in case you find our approach too verbose.
+
+2. The lsit of components generated should be configurable. Even our current list is probably the wrong approach.
