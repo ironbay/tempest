@@ -1,6 +1,6 @@
 # Tempest
 
-Tempest generates typesafe React components that accept Tailwind utilities as props. It respects your project's `tailwind.config.js` file to generate appropriate for any customization that you have added.
+Tempest generates typesafe React components that accept Tailwind utilities as props. It respects your project's `tailwind.config.js` file to generate appropriate types for any customization that you have added.
 
 ## Example
 
