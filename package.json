@@ -1,0 +1,25 @@
+{
+  "name": "@ironbay/tempest",
+  "version": "0.0.4",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@types/prettier": "^2.0.1",
+    "rollup": "^2.9.1",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "@ironbay/dynamic": "^1.0.10",
+    "prettier": "^2.0.5",
+    "tailwindcss": "^1.4.6"
+  }
+}
