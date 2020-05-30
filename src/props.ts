@@ -2,405 +2,405 @@ export default [
   {
     theme: "scale",
     class: "scale",
-    category: "transforms",
+    category: "transforms"
   },
   {
     theme: "rotate",
     class: "rotate",
-    category: "transforms",
+    category: "transforms"
   },
   {
     theme: "skew",
     class: "skew-x",
     category: "transforms",
-    name: "skewX",
+    name: "skewX"
   },
   {
     theme: "skew",
     class: "skew-y",
     category: "transforms",
-    name: "skewY",
+    name: "skewY"
   },
   {
     theme: "transformOrigin",
     class: "origin",
     category: "transforms",
-    name: "origin",
+    name: "origin"
   },
   {
     theme: "appearance",
     class: "appearance",
     category: "interactivity",
-    options: ["none"],
+    options: ["none"]
   },
   {
     theme: "cursor",
     class: "cursor",
-    category: "interactivity",
+    category: "interactivity"
   },
   {
     theme: "outline",
     class: "outline",
     category: "interactivity",
-    options: ["none"],
+    options: ["none"]
   },
   {
     theme: "pointerEvents",
     class: "pointer-events",
     category: "interactivity",
-    options: ["none", "auto"],
+    options: ["none", "auto"]
   },
   {
     theme: "resize",
     class: "resize",
     category: "interactivity",
-    options: ["none", "default", "y", "x"],
+    options: ["none", "default", "y", "x"]
   },
   {
     theme: "select",
     class: "select",
     category: "interactivity",
-    options: ["none", "text", "all", "auto"],
+    options: ["none", "text", "all", "auto"]
   },
   {
     theme: "transitionDelay",
     class: "delay",
-    category: "transition",
+    category: "transition"
   },
   {
     theme: "transitionTimingFunction",
     class: "ease",
-    category: "transition",
+    category: "transition"
   },
   {
     theme: "transitionDuration",
     class: "duration",
-    category: "transition",
+    category: "transition"
   },
   {
     theme: "transitionProperty",
     class: "transition",
-    category: "transition",
+    category: "transition"
   },
   {
     theme: "wordBreak",
     class: "",
     category: "text",
-    options: ["normal", "words", "all", "truncate"],
+    options: ["normal", "words", "all", "truncate"]
   },
   {
     theme: "whitespace",
     class: "",
     category: "text",
-    options: ["normal", "no-wrap", "pre", "pre-line", "pre-wrap"],
+    options: ["normal", "no-wrap", "pre", "pre-line", "pre-wrap"]
   },
   {
     theme: "verticalAlign",
     class: "",
     category: "text",
-    options: ["baseline", "top", "middle", "bottom", "text-top", "text-bottom"],
+    options: ["baseline", "top", "middle", "bottom", "text-top", "text-bottom"]
   },
   {
     theme: "textTransform",
     class: "",
     category: "text",
-    options: ["uppercase", "lowercase", "capitalize", "normal-case"],
+    options: ["uppercase", "lowercase", "capitalize", "normal-case"]
   },
   {
     theme: "textDecoration",
     class: "",
     category: "text",
-    options: ["underline", "line-through", "no-underline"],
+    options: ["underline", "line-through", "no-underline"]
   },
   {
     theme: "textOpacity",
     class: "text-opacity",
-    category: "text",
+    category: "text"
   },
   {
     theme: "textColor",
     class: "text",
-    category: "text",
+    category: "text"
   },
   {
     theme: "textAlign",
     class: "text",
     category: "text",
-    options: ["left", "center", "right", "justify"],
+    options: ["left", "center", "right", "justify"]
   },
   {
     theme: "placeholderOpacity",
     class: "placeholder-opacity",
-    category: "text",
+    category: "text"
   },
   {
     theme: "placeholderColor",
     class: "placeholder",
-    category: "text",
+    category: "text"
   },
   {
     theme: "listStylePosition",
     class: "list",
     category: "text",
-    options: ["inside", "outside"],
+    options: ["inside", "outside"]
   },
   {
     theme: "listStyleType",
     class: "list",
-    category: "text",
+    category: "text"
   },
   {
     theme: "lineHeight",
     class: "leading",
-    category: "text",
+    category: "text"
   },
   {
     theme: "letterSpacing",
     class: "tracking",
-    category: "text",
+    category: "text"
   },
   {
     theme: "fontWeight",
     class: "font",
-    category: "text",
+    category: "text"
   },
   {
     theme: "fontStyle",
     class: "",
     category: "text",
-    options: ["italic", "not-italic"],
+    options: ["italic", "not-italic"]
   },
   {
     theme: "fontSmoothing",
     class: "",
     category: "text",
-    options: ["antialiased", "subpixel-antialiased"],
+    options: ["antialiased", "subpixel-antialiased"]
   },
   {
     theme: "fontSize",
     class: "text",
-    category: "text",
+    category: "text"
   },
   {
     theme: "fontFamily",
     class: "font",
-    category: "text",
+    category: "text"
   },
   {
     theme: "tableLayout",
     class: "table",
     category: "table",
-    options: ["auto", "fixed"],
+    options: ["auto", "fixed"]
   },
   {
     theme: "borderCollapse",
     class: "border",
     category: "table",
-    options: ["collapse", "seperate"],
+    options: ["collapse", "seperate"]
   },
   {
     theme: "margin",
     class: "space-y",
     category: "spacing",
-    name: "spaceY",
+    name: "spaceY"
   },
   {
     theme: "margin",
     class: "space-x",
     category: "spacing",
-    name: "spaceX",
+    name: "spaceX"
   },
   {
     theme: "margin",
     class: "my",
     category: "spacing",
-    name: "mgnY",
+    name: "mgnY"
   },
   {
     theme: "margin",
     class: "mx",
     category: "spacing",
-    name: "mgnX",
+    name: "mgnX"
   },
   {
     theme: "margin",
     class: "mb",
     category: "spacing",
-    name: "mgnBottom",
+    name: "mgnBottom"
   },
   {
     theme: "margin",
     class: "mr",
     category: "spacing",
-    name: "mgnRight",
+    name: "mgnRight"
   },
   {
     theme: "margin",
     class: "ml",
     category: "spacing",
-    name: "mgnLeft",
+    name: "mgnLeft"
   },
   {
     theme: "margin",
     class: "mt",
     category: "spacing",
-    name: "mgnTop",
+    name: "mgnTop"
   },
   {
     theme: "margin",
     class: "m",
     category: "spacing",
-    name: "mgn",
+    name: "mgn"
   },
   {
     theme: "padding",
     class: "py",
     category: "spacing",
-    name: "padY",
+    name: "padY"
   },
   {
     theme: "padding",
     class: "px",
     category: "spacing",
-    name: "padX",
+    name: "padX"
   },
   {
     theme: "padding",
     class: "pb",
     category: "spacing",
-    name: "padBottom",
+    name: "padBottom"
   },
   {
     theme: "padding",
     class: "pr",
     category: "spacing",
-    name: "padRight",
+    name: "padRight"
   },
   {
     theme: "padding",
     class: "pl",
     category: "spacing",
-    name: "padLeft",
+    name: "padLeft"
   },
   {
     theme: "padding",
     class: "pt",
     category: "spacing",
-    name: "padTop",
+    name: "padTop"
   },
   {
     theme: "padding",
     class: "p",
     category: "spacing",
-    name: "pad",
+    name: "pad"
   },
   {
     theme: "maxHeight",
     class: "max-h",
-    category: "sizing",
+    category: "sizing"
   },
   {
     theme: "minHeight",
     class: "min-h",
-    category: "sizing",
+    category: "sizing"
   },
   {
     theme: "height",
     class: "h",
-    category: "sizing",
+    category: "sizing"
   },
   {
     theme: "maxWidth",
     class: "max-w",
-    category: "sizing",
+    category: "sizing"
   },
   {
     theme: "minWidth",
     class: "min-w",
-    category: "sizing",
+    category: "sizing"
   },
   {
     theme: "width",
     class: "w",
-    category: "sizing",
+    category: "sizing"
   },
   {
     theme: "zIndex",
     class: "z",
-    category: "layout",
+    category: "layout"
   },
   {
     theme: "visibility",
     class: "",
     category: "layout",
-    options: ["visible", "invisible"],
+    options: ["visible", "invisible"]
   },
   {
     theme: "inset",
     class: "bottom",
     category: "layout",
-    name: "bottom",
+    name: "bottom"
   },
   {
     theme: "inset",
     class: "right",
     category: "layout",
-    name: "right",
+    name: "right"
   },
   {
     theme: "inset",
     class: "left",
     category: "layout",
-    name: "left",
+    name: "left"
   },
   {
     theme: "inset",
     class: "top",
     category: "layout",
-    name: "top",
+    name: "top"
   },
   {
     theme: "inset",
     class: "inset-x",
     category: "layout",
-    name: "insetX",
+    name: "insetX"
   },
   {
     theme: "inset",
     class: "inset-y",
     category: "layout",
-    name: "insetY",
+    name: "insetY"
   },
   {
     theme: "inset",
     class: "inset",
-    category: "layout",
+    category: "layout"
   },
   {
     theme: "position",
     class: "",
     category: "layout",
-    options: ["static", "fixed", "absolute", "relative", "sticky"],
+    options: ["static", "fixed", "absolute", "relative", "sticky"]
   },
   {
     theme: "overflow",
     class: "overflow-y",
     category: "layout",
     options: ["auto", "hidden", "visible", "scroll"],
-    name: "overflowY",
+    name: "overflowY"
   },
   {
     theme: "overflow",
     class: "overflow-x",
     category: "layout",
     options: ["auto", "hidden", "visible", "scroll"],
-    name: "overflowX",
+    name: "overflowX"
   },
   {
     theme: "overflow",
     class: "overflow",
     category: "layout",
-    options: ["auto", "hidden", "visible", "scroll"],
+    options: ["auto", "hidden", "visible", "scroll"]
   },
   {
     theme: "objectPosition",
@@ -415,34 +415,34 @@ export default [
       "right",
       "right-bottom",
       "right-top",
-      "top",
-    ],
+      "top"
+    ]
   },
   {
     theme: "objectFit",
     class: "object",
     category: "layout",
-    options: ["contains", "cover", "fill", "none"],
+    options: ["contains", "cover", "fill", "none"]
   },
   {
     theme: "float",
     class: "clear",
     category: "layout",
     options: ["left", "right", "both", "none"],
-    name: "clear",
+    name: "clear"
   },
   {
     theme: "float",
     class: "clearfix",
     category: "layout",
     options: ["default"],
-    name: "clearfix",
+    name: "clearfix"
   },
   {
     theme: "float",
     class: "float",
     category: "layout",
-    options: ["right", "left", "none"],
+    options: ["right", "left", "none"]
   },
   {
     theme: "display",
@@ -466,196 +466,220 @@ export default [
       "table-footer-group",
       "table-header-group",
       "table-row-group",
-      "table-row",
-    ],
+      "table-row"
+    ]
   },
   {
     theme: "boxSizing",
     class: "box",
     category: "layout",
-    options: ["border", "content"],
+    options: ["border", "content"]
   },
   {
     theme: "container",
     class: "container",
     category: "layout",
-    options: ["default"],
+    options: ["default"]
   },
   {
     theme: "order",
     class: "order",
-    category: "flex",
+    category: "flex"
   },
   {
     theme: "flexShrink",
     class: "flex-shrink",
-    category: "flex",
+    category: "flex"
   },
   {
     theme: "flexGrow",
     class: "flex-grow",
-    category: "flex",
+    category: "flex"
   },
   {
     theme: "flex",
     class: "flex",
-    category: "flex",
+    category: "flex"
   },
   {
     theme: "justifyContent",
     class: "justify",
     category: "flex",
-    options: ["start", "center", "end", "between", "around"],
+    options: ["start", "center", "end", "between", "around"]
   },
   {
     theme: "alignSelf",
     class: "self",
     category: "flex",
-    options: ["auto", "start", "center", "end", "stretch"],
+    options: ["auto", "start", "center", "end", "stretch"]
   },
   {
     theme: "alignContent",
     class: "content",
     category: "flex",
-    options: ["start", "center", "end", "between", "around"],
+    options: ["start", "center", "end", "between", "around"]
   },
   {
     theme: "alignItems",
     class: "items",
     category: "flex",
-    options: ["stretch", "start", "center", "end", "baseline"],
+    options: ["stretch", "start", "center", "end", "baseline"]
   },
   {
     theme: "flexWrap",
     class: "flex",
     category: "flex",
-    options: ["wrap", "no-wrap", "wrap-reverse"],
+    options: ["wrap", "no-wrap", "wrap-reverse"]
   },
   {
     theme: "flexDirection",
     class: "flex",
     category: "flex",
-    options: ["row", "row-reverse", "col", "col-reverse"],
+    options: ["row", "row-reverse", "col", "col-reverse"]
   },
   {
     theme: "boxShadow",
     class: "shadow",
-    category: "effect",
+    category: "effect"
   },
   {
     theme: "opacity",
     class: "opacity",
-    category: "effect",
+    category: "effect"
   },
   {
     theme: "borderRadius",
     class: "rounded-l",
     category: "border",
-    name: "borderRadiusLeft",
+    name: "borderRadiusLeft"
   },
   {
     theme: "borderRadius",
     class: "rounded-b",
     category: "border",
-    name: "borderRadiusBottom",
+    name: "borderRadiusBottom"
   },
   {
     theme: "borderRadius",
     class: "rounded-r",
     category: "border",
-    name: "borderRadiusRight",
+    name: "borderRadiusRight"
   },
   {
     theme: "borderRadius",
     class: "rounded-t",
     category: "border",
-    name: "borderRadiusTop",
+    name: "borderRadiusTop"
+  },
+  {
+    theme: "borderRadius",
+    class: "rounded-tl",
+    category: "border",
+    name: "borderRadiusTopLeft"
+  },
+  {
+    theme: "borderRadius",
+    class: "rounded-tr",
+    category: "border",
+    name: "borderRadiusTopRight"
+  },
+  {
+    theme: "borderRadius",
+    class: "rounded-bl",
+    category: "border",
+    name: "borderRadiusBottomLeft"
+  },
+  {
+    theme: "borderRadius",
+    class: "rounded-br",
+    category: "border",
+    name: "borderRadiusBottomRight"
   },
   {
     theme: "borderRadius",
     class: "rounded",
-    category: "border",
+    category: "border"
   },
   {
     theme: "borderWidth",
     class: "border-r",
     category: "border",
-    name: "borderWidthRight",
+    name: "borderWidthRight"
   },
   {
     theme: "borderWidth",
     class: "border-l",
     category: "border",
-    name: "borderWidthLeft",
+    name: "borderWidthLeft"
   },
   {
     theme: "borderWidth",
     class: "border-b",
     category: "border",
-    name: "borderWidthBottom",
+    name: "borderWidthBottom"
   },
   {
     theme: "borderWidth",
     class: "border-t",
     category: "border",
-    name: "borderWidthTop",
+    name: "borderWidthTop"
   },
   {
     theme: "divideOpacity",
     class: "divide-opacity",
-    category: "border",
+    category: "border"
   },
   {
     theme: "divideColor",
     class: "divide",
-    category: "border",
+    category: "border"
   },
   {
     theme: "divideWidth",
     class: "divide-y-reverse",
     category: "border",
     options: ["default"],
-    name: "divideReverseY",
+    name: "divideReverseY"
   },
   {
     theme: "divideWidth",
     class: "divide-y",
     category: "border",
-    name: "divideY",
+    name: "divideY"
   },
   {
     theme: "divideWidth",
     class: "divide-x-reverse",
     category: "border",
     options: ["default"],
-    name: "divideReverseX",
+    name: "divideReverseX"
   },
   {
     theme: "divideWidth",
     class: "divide-x",
     category: "border",
-    name: "divideX",
+    name: "divideX"
   },
   {
     theme: "borderOpacity",
     class: "border-opacity",
-    category: "border",
+    category: "border"
   },
   {
     theme: "borderColor",
     class: "border",
-    category: "border",
+    category: "border"
   },
   {
     theme: "borderStyle",
     class: "border",
     category: "border",
-    options: ["solid", "dashed", "dotted", "double", "none"],
+    options: ["solid", "dashed", "dotted", "double", "none"]
   },
   {
     theme: "borderWidth",
     class: "border",
-    category: "border",
+    category: "border"
   },
   {
     theme: "backgroundRepeat",
@@ -667,30 +691,30 @@ export default [
       "repeat-x",
       "repeat-y",
       "repeat-round",
-      "repeat-space",
-    ],
+      "repeat-space"
+    ]
   },
   {
     theme: "backgroundAttatchment",
     class: "bg",
     category: "background",
-    options: ["fixed", "local", "scroll"],
+    options: ["fixed", "local", "scroll"]
   },
   {
     theme: "backgroundOpacity",
     class: "bg-opacity",
-    category: "background",
+    category: "background"
   },
   {
     theme: "backgroundColor",
     class: "bg",
-    category: "background",
+    category: "background"
   },
   {
     theme: "backgroundSize",
     class: "bg",
     category: "background",
-    options: ["auto", "cover", "contain"],
+    options: ["auto", "cover", "contain"]
   },
   {
     theme: "backgroundPosition",
@@ -705,7 +729,7 @@ export default [
       "right",
       "right-bottom",
       "right-top",
-      "top",
-    ],
-  },
+      "top"
+    ]
+  }
 ]
