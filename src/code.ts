@@ -75,9 +75,14 @@ export function generate_code(props: PropDescription[], config: any) {
     const options = get_options(description.options, description.theme, config)
     for (let option of options) {
       option = option === "default" || option === "" ? "true" : option
-      const className = [description.class, option !== "true" && option]
-        .filter((item) => item)
+      const is_negative = option.startsWith("-")
+      let className = [
+        description.class,
+        option !== "true" && (is_negative ? option.slice(1) : option),
+      ]
+        .filter((item) => item != null)
         .join("-")
+      if (is_negative) className = "-" + className
       buffer.push(`    "${option}": "${className}",`)
     }
     buffer.push(`  },`)
