@@ -48,7 +48,7 @@ export const Button = styled.button<
   justify-content: center;
   padding: 0px 20px;
   height: 45px;
-  transition: 300ms all;
+  transition: 300ms background-color;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
@@ -68,6 +68,7 @@ export const Button = styled.button<
 
   &:active {
     background-color: ${(props) => variants[props.variant || "primary"].active};
+    transform: translate3d(0, 2px, 0);
   }
 `
 
