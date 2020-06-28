@@ -27,6 +27,7 @@ const colors = {
 
 const colors_semantic = {
   primary: colors.indigo500,
+  danger: colors.red500,
   border: "#d7dae8",
 }
 

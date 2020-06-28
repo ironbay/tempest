@@ -1,6 +1,12 @@
 import React from "react"
 import { RouteComponentProps } from "@reach/router"
-import { Button, Box, FormInput, FormOutline } from "../../components"
+import {
+  Button,
+  Box,
+  FormInput,
+  FormOutline,
+  IconCancel,
+} from "../../components"
 
 export default function Home(_props: RouteComponentProps) {
   return (
@@ -31,6 +37,9 @@ export default function Home(_props: RouteComponentProps) {
           </FormOutline>
           <FormOutline focus variant="danger">
             <FormInput variant="danger" placeholder="Danger focus" />
+            <Box fg="red500">
+              <IconCancel />
+            </Box>
           </FormOutline>
           <FormOutline disabled>
             <FormInput disabled placeholder="Disabled" />
