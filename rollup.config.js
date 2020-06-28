@@ -2,7 +2,7 @@ import typescript from "rollup-plugin-typescript2"
 import pkg from "./package.json"
 
 export default {
-  input: "src/index.ts",
+  input: "src/components/index.tsx",
   output: [
     {
       banner: "#!/usr/bin/env node",

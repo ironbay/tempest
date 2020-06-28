@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { GenerateProps, system, Common, themed, Width, All } from "../system"
-import { theme } from "../theme"
+import { GenerateProps, system, Common, themed, Width, All } from "./system"
+import { theme } from "./theme"
 
 const variants = {
   danger: {

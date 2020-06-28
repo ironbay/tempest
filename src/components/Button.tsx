@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { Layout, GenerateProps, system, Common } from "../system"
-import { theme } from "../theme"
+import { Layout, GenerateProps, system, Common } from "./system"
+import { theme } from "./theme"
 
 const props = [...Common, ...Layout]
 
