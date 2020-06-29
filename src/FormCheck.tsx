@@ -67,8 +67,7 @@ const Icon = styled(IconCheck)<{
   color: white;
   transition: 300ms all;
   opacity: ${(props) => (props.value ? 1 : 0)};
-  transform: ${(props) =>
-    props.value ? "translate3d(0, 0, 0)" : "translate3d(0, 5px, 0)"};
+  transform: ${(props) => (props.value ? "initial" : "translate3d(0, 5px, 0)")};
 `
 
 Icon.defaultProps = {

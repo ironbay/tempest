@@ -10,9 +10,12 @@ export const Default = () => {
   return (
     <Box display="grid" gridGap={3}>
       <FormCheck value={false}>Unchecked</FormCheck>
+      <FormCheck value={false} disabled>
+        Unchecked Disabled
+      </FormCheck>
       <FormCheck value={true}>Checked</FormCheck>
       <FormCheck value={true} disabled>
-        Disabled
+        Checked Disabled
       </FormCheck>
       <FormCheck value={checked} onClick={() => checked_set(!checked)}>
         Live
