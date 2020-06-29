@@ -2,10 +2,10 @@ import React from "react"
 import { Box, FormInput, FormOutline } from "../src"
 
 export default {
-  title: "Form",
+  title: "FormInput",
 }
 
-export const Input = () => (
+export const Variants = () => (
   <Box display="flex">
     {["normal", "danger"].map((variant) => (
       <>
@@ -17,6 +17,20 @@ export const Input = () => (
     ))}
     <FormOutline disabled>
       <FormInput placeholder="Disabled" disabled />
+    </FormOutline>
+  </Box>
+)
+
+export const PrefixSuffix = () => (
+  <Box display="flex">
+    <FormOutline>
+      <Box fontSize={5} mgnRight={2}>
+        $
+      </Box>
+      <FormInput placeholder="0.00" />
+      <Box mgnLeft={2} fontWeight={500}>
+        USD
+      </Box>
     </FormOutline>
   </Box>
 )
