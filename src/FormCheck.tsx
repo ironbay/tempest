@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Theme } from "./theme"
-import { Box } from "./Box"
 import { IconCheck } from "./Icon"
 
 type Props = {
@@ -18,11 +17,7 @@ export const FormCheck = styled(function FormCheck({
   return (
     <div {...rest}>
       <Check disabled={disabled} value={value}>
-        {value && (
-          <Box fg={disabled ? "black" : "white"}>
-            <IconCheck width={14} />
-          </Box>
-        )}
+        <Icon value={value} />
       </Check>
       <Label disabled={disabled}>{children}</Label>
     </div>
@@ -65,3 +60,17 @@ const Label = styled.label<{
   cursor: pointer;
   padding-left: 0.5rem;
 `
+
+const Icon = styled(IconCheck)<{
+  value?: boolean
+}>`
+  color: white;
+  transition: 300ms all;
+  opacity: ${(props) => (props.value ? 1 : 0)};
+  transform: ${(props) =>
+    props.value ? "translate3d(0, 0, 0)" : "translate3d(0, 5px, 0)"};
+`
+
+Icon.defaultProps = {
+  width: 14,
+}
