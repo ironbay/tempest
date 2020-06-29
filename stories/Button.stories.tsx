@@ -5,7 +5,7 @@ export default {
   title: "Button",
 }
 
-export const Default = () => (
+export const Variants = () => (
   <Box display="flex">
     {["primary", "secondary", "dark", "danger"].map((variant) => (
       <>

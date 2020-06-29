@@ -1,8 +1,8 @@
 import React from "react"
-import { Box, FormInput, FormOutline } from "../src"
+import { Box, FormInput, FormOutline } from "../../src"
 
 export default {
-  title: "FormInput",
+  title: "Form/Input",
 }
 
 export const Variants = () => (
@@ -21,7 +21,7 @@ export const Variants = () => (
   </Box>
 )
 
-export const PrefixSuffix = () => (
+export const Addons = () => (
   <Box display="flex">
     <FormOutline>
       <Box fontSize={5} mgnRight={2}>
