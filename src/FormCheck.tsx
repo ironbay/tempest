@@ -35,7 +35,7 @@ const Check = styled.div<{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 300ms all;
+  transition: 300ms all cubic-bezier(0, 0.67, 0.27, 1);
   border: 1px solid
     ${(props) =>
       props.value && !props.disabled
@@ -65,7 +65,7 @@ const Icon = styled(IconCheck)<{
   value?: boolean
 }>`
   color: white;
-  transition: 300ms all;
+  transition: 300ms all cubic-bezier(0, 0.67, 0.27, 1);
   opacity: ${(props) => (props.value ? 1 : 0)};
   transform: ${(props) => (props.value ? "initial" : "translate3d(0, 5px, 0)")};
 `
