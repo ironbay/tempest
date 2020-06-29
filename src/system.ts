@@ -1,4 +1,5 @@
-import { css, DefaultTheme } from "styled-components"
+import { css } from "styled-components"
+import { Theme, ThemeType } from "./theme"
 import * as CSS from "csstype"
 
 // Groups
@@ -123,9 +124,7 @@ export const All = [
   ...Grid,
 ]
 
-type Responsive<T> =
-  | T
-  | { [key in keyof DefaultTheme["breakpoints"] | "_"]?: T }
+type Responsive<T> = T | { [key in keyof ThemeType["breakpoints"] | "_"]?: T }
 type Length = string | number
 
 type SystemProp = typeof All[number]
@@ -360,21 +359,24 @@ const Transformers = {
   fontWeight: {
     theme: "fontWeight",
   },
+  fontFamily: {
+    theme: "fontFamily",
+  },
 } as const
 
 type SystemThemes = {
-  [key in keyof typeof Transformers]?: keyof DefaultTheme[typeof Transformers[key]["theme"]]
+  [key in keyof typeof Transformers]?: keyof ThemeType[typeof Transformers[key]["theme"]]
 }
 
 export function themed(input: SystemThemes) {
-  return function (props: any) {
+  return function () {
     const results = {}
     for (let prop of Object.keys(input)) {
       const value = input[prop]
 
       const transformer = Transformers[prop] || {}
       const targets = transformer.targets || [prop]
-      const theme = props.theme[transformer.theme] || {}
+      const theme = Theme[transformer.theme] || {}
 
       const style = theme[value]
       targets.reduce((collect, target) => {
@@ -402,7 +404,7 @@ export function system<T extends readonly SystemProp[]>(system_props: T) {
 
       const transformer = Transformers[prop] || {}
       const targets = transformer.targets || [prop]
-      const theme = props.theme[transformer.theme] || {}
+      const theme = Theme[transformer.theme] || {}
 
       for (let selector of Object.keys(responsive)) {
         const style = theme[responsive[selector]] || responsive[selector]
@@ -417,7 +419,7 @@ export function system<T extends readonly SystemProp[]>(system_props: T) {
           }
           continue
         }
-        results[props.theme.breakpoints[selector]] = final
+        results[Theme.breakpoints[selector]] = final
       }
     }
 
@@ -429,11 +431,11 @@ export type GenerateProps<T extends readonly SystemProp[]> = {
   [key in T[number]]?: Responsive<
     LiteralUnion<
       key extends keyof CSSProps & keyof typeof Transformers
-        ? CSSProps[key] | keyof DefaultTheme[typeof Transformers[key]["theme"]]
+        ? CSSProps[key] | keyof ThemeType[typeof Transformers[key]["theme"]]
         : key extends keyof CSSProps
         ? CSSProps[key]
         : key extends keyof typeof Transformers
-        ? keyof DefaultTheme[typeof Transformers[key]["theme"]]
+        ? keyof ThemeType[typeof Transformers[key]["theme"]]
         : never
     >
   >

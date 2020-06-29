@@ -1,5 +1,3 @@
-import "styled-components"
-
 const breakpoints = {
   sm: "640px",
   md: "768px",
@@ -61,6 +59,10 @@ const fontWeight = {
   900: 900,
 }
 
+const fontFamily = {
+  sans: "Archivo",
+}
+
 const spacing = {
   0: "0",
   1: "0.25rem",
@@ -82,20 +84,17 @@ const spacing = {
   64: "16rem",
 }
 
-export const theme = {
+export const Theme = {
   colors: {
     ...colors,
     ...colors_semantic,
   },
   shadow,
+  fontFamily,
   fontWeight,
   fontSize,
   spacing,
   breakpoints,
 } as const
 
-type Theme = typeof theme
-
-declare module "styled-components" {
-  export interface DefaultTheme extends Theme {}
-}
+export type ThemeType = typeof Theme

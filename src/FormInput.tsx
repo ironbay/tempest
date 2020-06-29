@@ -1,18 +1,18 @@
 import styled from "styled-components"
 import { GenerateProps, system, Common, themed, Width, All } from "./system"
-import { theme } from "./theme"
+import { Theme } from "./theme"
 
 const variants = {
   danger: {
-    color: theme.colors.red500,
-    border: theme.colors.red500,
-    focus: theme.colors.red500,
+    color: Theme.colors.red500,
+    border: Theme.colors.red500,
+    focus: Theme.colors.red500,
     shadow: "0px 4px 14px rgba(229, 85, 76, 0.25)",
   },
   normal: {
     color: "#000033",
-    border: theme.colors.border,
-    focus: theme.colors.primary,
+    border: Theme.colors.border,
+    focus: Theme.colors.primary,
     shadow: "0px 4px 20px rgba(105, 131, 255, 0.25)",
   },
 }
@@ -27,6 +27,8 @@ export const FormOutline = styled.div<
   } & GenerateProps<typeof outline_props>
 >`
   ${system(outline_props)}
+  ${themed({ fontFamily: "sans" })}
+  cursor: ${(props) => props.disabled && "not-allowed"};
   display: flex;
   align-items: center;
   border-radius: 8px;
@@ -39,12 +41,12 @@ export const FormOutline = styled.div<
     return variants[props.variant || "normal"].border
   }};
   background: ${(props) => {
-    if (props.disabled) return props.theme.colors.gray500
-    return props.theme.colors.white
+    if (props.disabled) return Theme.colors.gray500
+    return Theme.colors.white
   }};
   box-shadow: ${(props) =>
     props.focus && variants[props.variant || "normal"].shadow};
-  padding: 0px 1rem;
+  padding: 0 1rem;
   &:focus-within {
     border-color: ${(props) => variants[props.variant || "normal"].focus};
     box-shadow: ${(props) => variants[props.variant || "normal"].shadow};
@@ -64,11 +66,13 @@ export const FormInput = styled.input<
   ${system(input_props)}
   ${themed({
     fontWeight: 500,
+    fontFamily: "sans",
   })}
   background: transparent;
-  font-family: Archivo;
+  cursor: ${(props) => props.disabled && "not-allowed"};
   border: 0;
   outline: 0;
+  padding: 0;
   color: ${(props) => variants[props.variant || "normal"].color};
   transition: 300ms all;
   height: 45px;

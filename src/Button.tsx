@@ -1,33 +1,33 @@
 import styled from "styled-components"
 import { Layout, GenerateProps, system, Common } from "./system"
-import { theme } from "./theme"
+import { Theme } from "./theme"
 
 const props = [...Common, ...Layout]
 
 const variants = {
   primary: {
-    fg: theme.colors.white,
-    bg: theme.colors.indigo500,
-    hover: theme.colors.indigo400,
-    active: theme.colors.indigo300,
+    fg: Theme.colors.white,
+    bg: Theme.colors.indigo500,
+    hover: Theme.colors.indigo400,
+    active: Theme.colors.indigo300,
     shadow: "0px 4px 14px rgba(80, 107, 234, 0.25)",
   },
   secondary: {
-    fg: theme.colors.black,
-    bg: theme.colors.gray500,
-    hover: theme.colors.gray400,
-    active: theme.colors.gray300,
+    fg: Theme.colors.black,
+    bg: Theme.colors.gray500,
+    hover: Theme.colors.gray400,
+    active: Theme.colors.gray300,
     shadow: "0px 4px 14px rgba(220, 224, 236, 0.25)",
   },
   danger: {
-    fg: theme.colors.white,
-    bg: theme.colors.red500,
-    hover: theme.colors.red400,
-    active: theme.colors.red300,
+    fg: Theme.colors.white,
+    bg: Theme.colors.red500,
+    hover: Theme.colors.red400,
+    active: Theme.colors.red300,
     shadow: "0px 4px 14px rgba(229, 85, 76, 0.25)",
   },
   dark: {
-    fg: theme.colors.white,
+    fg: Theme.colors.white,
     bg: "#000033",
     hover: "#1F1F6B",
     active: "#000023",
