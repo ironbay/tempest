@@ -178,7 +178,7 @@ type CSSProps = {
   boxShadow: CSS.Globals | "none"
   background: CSS.Globals | CSS.FinalBgLayer<Length>
   backgroundImage: CSS.Globals | "none"
-  backgroundRepeat: CSS.Globals | CSS.RepeatStyle
+  backgroundRepeat: CSS.Globals
   backgroundSize: CSS.Globals | CSS.BgSize<Length>
   flex:
     | CSS.Globals

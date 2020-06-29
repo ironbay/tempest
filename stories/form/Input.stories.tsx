@@ -7,14 +7,14 @@ export default {
 
 export const Variants = () => (
   <Box display="flex">
-    {["normal", "danger"].map((variant) => (
-      <>
-        <FormOutline variant={variant as any}>
-          <FormInput placeholder={variant} variant={variant as any} />
-        </FormOutline>
-        <Box pad={1} />
-      </>
-    ))}
+    <FormOutline>
+      <FormInput placeholder="Normal" />
+    </FormOutline>
+    <Box pad={1} />
+    <FormOutline variant="danger">
+      <FormInput placeholder="Danger" variant="danger" />
+    </FormOutline>
+    <Box pad={1} />
     <FormOutline disabled>
       <FormInput placeholder="Disabled" disabled />
     </FormOutline>

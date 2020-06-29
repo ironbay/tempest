@@ -2,6 +2,7 @@
   "include": ["src", "types"],
   "compilerOptions": {
     "noErrorTruncation": true,
+    "noEmit": true,
     "noImplicitAny": false,
     "module": "esnext",
     "lib": ["dom", "esnext"],
